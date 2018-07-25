@@ -1,3 +1,84 @@
 html{
-    background-color: #2B2929
+    background-color: #ffcc00;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+ 
+#cheffing{
+   color: white;
+   padding-right: 45%;
+   padding-top: 2.5%;
+   font-size: 70px;
+   float: right;
+}
+
+#recipeDiv{
+    width: 25%;
+    display: inline-block;
+
+}
+
+#recipe{
+    font-size: 50px;
+    color: white;
+    background-color: grey;
+    padding-left: 25%;
+    
+}
+
+#headerDiv{
+    float: left;
+    width: 100%;
+    background-color: #2B2929;
+}
+
+li{
+    background-color: #e88823;
+    padding-left: .5%;
+    font-size: 30px;
+    color: white;
+}
+
+#recipeHeaderDiv{
+    width: 70%;
+    border: 2px solid grey;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    background-color: white;
+    display: inline-block;
+    
+}
+
+#recipeTitle{
+    padding-left: 25%;
+}
+
+#recipeImage{
+    border: 2px solid grey;
+    margin: 25px;
+    background-color: white;
+    float: left;
+}
+
+#ingredientsDiv{
+float:left;
+display: inline-block;
+border: 2px solid grey;
+background-color: white;
+margin-left: 26.5%;
+padding-left: 10%;
+padding-right: 10%;
+padding-bottom: 15%;
+}
+
+#instructionsDiv{
+    float:right;
+    display: inline-block;
+    border: 2px solid grey;
+    background-color: white;
+    margin-right: 3.3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15%;
+}
+
