@@ -15,6 +15,7 @@ namespace Neumont_Recipe_Site.Controllers
 
 		public ActionResult Recipe(string fileName)
 		{
+			ViewData["FileURL"] = fileName;
 			return View();
 		}
 	}
