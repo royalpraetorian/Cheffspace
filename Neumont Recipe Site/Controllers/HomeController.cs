@@ -13,9 +13,13 @@ namespace Neumont_Recipe_Site.Controllers
 			return View();
 		}
 
-		public ActionResult Recipe(string fileName)
+		public ActionResult Recipe(string recipe)
 		{
-			ViewData["FileURL"] = fileName;
+			if(recipe==null || recipe=="")
+			{
+				return Redirect("/Home");
+			}
+			ViewData["FileName"] = recipe;
 			return View();
 		}
 	}

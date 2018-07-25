@@ -15,7 +15,7 @@ namespace Neumont_Recipe_Site
 
 			routes.MapRoute(
 				name: "Recipe",
-				url: "recipe/{fileName}",
+				url: "recipe/{recipe}",
 				defaults: new { controller = "Home", action = "Recipe" }
 				);
 
