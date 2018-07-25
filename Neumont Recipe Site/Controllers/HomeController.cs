@@ -13,17 +13,8 @@ namespace Neumont_Recipe_Site.Controllers
 			return View();
 		}
 
-		public ActionResult About()
+		public ActionResult Recipe(string fileName)
 		{
-			ViewBag.Message = "Your application description page.";
-
-			return View();
-		}
-
-		public ActionResult Contact()
-		{
-			ViewBag.Message = "Your contact page.";
-
 			return View();
 		}
 	}
