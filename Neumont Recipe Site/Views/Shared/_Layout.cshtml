@@ -4,34 +4,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Neumont Chefspace</title>
+    <link rel="Stylesheet" href="~/Content/main.css" type="text/css" />
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @*@Scripts.Render("~/bundles/modernizr")*@
 </head>
-<body>
+<body class="mainBody">
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container" id="headerDiv">
+            <div>
+                <img class="NCLogo" src="~/Resources/logo-white.png" />
+            </div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+
                 @Html.ActionLink("Chefspace", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    
                     <li>@Html.ActionLink("Recipes", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="content">
-        <div class="recipeNav">
+    @*<div id="recipeDiv"  >*@
+        <div id="recipe" class="recipeNav">
+            <a id="recipeHeaderDiv">RECIPES</a>
             <ul>
                 <li class="recipeButton">@Html.ActionLink("Great-o Potatoes", "Recipe", "Home", new { recipeLink = "GreatoPotatoes", recipeName = "Great-o Potatoes" }, null)</li>
                 <li class="recipeButton">@Html.ActionLink("Smoked Queso Dip", "Recipe", "Home", new { recipeLink = "SmokedQuesoDip", recipeName = "Smoked Queso Dip" }, null)</li>
-                <li class="recipeButton">@Html.ActionLink("Queso Dip", "Recipe", "Home")</li>
+                <li class="recipeButton">@Html.ActionLink("Jambalaya", "Recipe", "Home", new { recipeLink = "Jambalaya", recipeName = "Diamond Jambalaya" }, null)</li>
                 <li class="recipeButton">@Html.ActionLink("Chili", "Index", "Home")</li>
                 <li class="recipeButton">@Html.ActionLink("Chefspace", "Index", "Home")</li>
             </ul>
@@ -40,18 +47,14 @@
             <div class="content">
             </div>
         </div>
-        <div class="bottom_block block_2">
-            <div class="content">
-            </div>
-        </div>
-    </div>
+    @*</div>*@
 
 
     <div class="row">
         <div class="col-md-4">
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container @*body-content*@">
         @RenderBody()
         <hr />
     </div>

@@ -18,7 +18,7 @@ html{
 
 }
 
-#recipe{
+.recipe{
     font-size: 50px;
     color: white;
     background-color: grey;
@@ -29,14 +29,37 @@ html{
 #headerDiv{
     float: left;
     width: 100%;
+
     background-color: #2B2929;
 }
 
-li{
-    background-color: #e88823;
+.recipeButton{
+    text-decoration:none;
+
     padding-left: .5%;
-    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; 
+    font-size: 1.4em;
     color: white;
+}
+
+.recipeButton:visited
+{
+    text-decoration: none;
+        background-color:orange;
+}
+
+.recipeButton:hover
+{
+    text-decoration:none;
+    background-color:orange;
+    
+}
+
+.recipeButton:active
+{
+    background-color:orange;
 }
 
 #recipeHeaderDiv{
@@ -54,6 +77,7 @@ li{
 }
 
 #recipeImage{
+    height: 80%;
     border: 2px solid grey;
     margin: 25px;
     background-color: white;
@@ -61,7 +85,6 @@ li{
 }
 
 #ingredientsDiv{
-float:left;
 display: inline-block;
 border: 2px solid grey;
 background-color: white;
@@ -72,7 +95,6 @@ padding-bottom: 15%;
 }
 
 #instructionsDiv{
-    float:right;
     display: inline-block;
     border: 2px solid grey;
     background-color: white;
@@ -82,3 +104,11 @@ padding-bottom: 15%;
     padding-bottom: 15%;
 }
 
+.NCLogo{
+    max-height:20%;
+    max-width:20%;
+    float:left;
+    padding-top: 3px;
+    padding-bottom:3px;
+    
+}

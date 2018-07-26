@@ -156,6 +156,7 @@
     <Content Include="Recipes\ChocolateChowMein.jpg" />
     <Content Include="Recipes\GreatoPotatoes.jpg" />
     <Content Include="Recipes\SmokedQuesoDip.jpg" />
+    <Content Include="Resources\logo-white.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">

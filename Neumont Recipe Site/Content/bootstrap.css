@@ -57,9 +57,9 @@ html {
       -ms-text-size-adjust: 100%;
 }
 
-body {
+/*body {
   margin: 0;
-}
+}*/
 
 a:focus {
   outline: thin dotted;
@@ -3788,6 +3788,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+    
 }
 
 .nav:before,
