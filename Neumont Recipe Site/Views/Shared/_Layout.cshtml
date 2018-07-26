@@ -26,6 +26,31 @@
             </div>
         </div>
     </div>
+    <div class="content">
+        <div class="recipeNav">
+            <ul>
+                <li class="recipeButton">@Html.ActionLink("Great-o Potatoes", "Recipe", "Home", new { recipeLink = "GreatoPotatoes", recipeName = "Great-o Potatoes" }, null)</li>
+                <li class="recipeButton">@Html.ActionLink("Smoked Queso Dip", "Recipe", "Home", new { recipeLink = "SmokedQuesoDip", recipeName = "Smoked Queso Dip" }, null)</li>
+                <li class="recipeButton">@Html.ActionLink("Queso Dip", "Recipe", "Home")</li>
+                <li class="recipeButton">@Html.ActionLink("Chili", "Index", "Home")</li>
+                <li class="recipeButton">@Html.ActionLink("Chefspace", "Index", "Home")</li>
+            </ul>
+        </div>
+        <div class="recipeDisp">
+            <div class="content">
+            </div>
+        </div>
+        <div class="bottom_block block_2">
+            <div class="content">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+    </div>
     <div class="container body-content">
         @RenderBody()
         <hr />

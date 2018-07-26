@@ -13,14 +13,17 @@ namespace Neumont_Recipe_Site.Controllers
 			return View();
 		}
 
-		public ActionResult Recipe(string recipe)
+		public ActionResult Recipe(string recipeLink, string recipeName)
 		{
-			if(recipe==null || recipe=="")
+			if(recipeLink==null || recipeLink=="")
 			{
 				return Redirect("/Home");
 			}
-			ViewData["FileName"] = recipe;
+			ViewData["FileName"] = recipeLink;
+            ViewData["RecipeName"] = recipeName;
 			return View();
 		}
+
+
 	}
 }
