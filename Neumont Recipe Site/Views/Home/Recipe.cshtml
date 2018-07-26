@@ -1,8 +1,8 @@
 ﻿@{
     ViewBag.Title = "Recipe";
-    string filePath = "~/Recipes/" + ViewData["FileName"] + ".jpg";
+    string filePath = "~/Recipes/" + ViewData["FileName"].ToString() + ".jpg";
 }
 
 <h2>@ViewData["FileName"].ToString()</h2>
-<img id="recipeSlide" src=@filePath/>
+<img id="recipe" src="@filePath"/>
 
